@@ -12,7 +12,7 @@
 -   Tag/category support
 -   Desktop and Mobile responsive layout
 
-Scaffolded from Clarisse's theme:  
+Scaffolded from @tacogator's version of the Clarisse theme:  
 https://www.gatsbyjs.com/starters/tacogator/gatsby-starter-blog-material-clarisse
 
 ```
