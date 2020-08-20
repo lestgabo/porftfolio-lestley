@@ -35,17 +35,20 @@ module.exports = {
         ],
         externalLinks: [
             {
-                name: `twitter`,
-                url: `https://twitter.com/nacho_codes`,
+                name: `linkedin`,
+                url: `https://www.linkedin.com/in/lestgabo/`,
             },
             {
                 name: `github`,
                 url: `https://github.com/tacogator/gatsby-themes`,
             },
             {
-                name: 'Newsletter',
-                url: `https://duckduckgo.com`,
-                type: 'cta',
+                name: `twitter`,
+                url: `https://twitter.com/lestgabo`,
+            },
+            {
+                name: `instagram`,
+                url: `https://www.instagram.com/lestgabo/`,
             },
         ],
     },
