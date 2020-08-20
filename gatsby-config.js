@@ -17,7 +17,7 @@ module.exports = {
         // Navigation links
         navigation: [
             {
-                title: `Home`,
+                title: `Projects`,
                 slug: `/`,
             },
             {
@@ -25,12 +25,12 @@ module.exports = {
                 slug: `/about`,
             },
             {
-                title: `Contact`,
-                slug: `/contact`,
-            },
-            {
                 title: `Papers`,
                 slug: `/papers`,
+            },
+            {
+                title: `Contact`,
+                slug: `/contact`,
             },
         ],
         externalLinks: [
