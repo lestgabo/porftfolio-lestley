@@ -10,7 +10,9 @@
 -   Tag/category support
 -   Desktop and Mobile responsive layout
 
+
+Scaffolded from Clarisse's theme:  
+https://www.gatsbyjs.com/starters/tacogator/gatsby-starter-blog-material-clarisse
 ```
-# Scaffolded from Clarisse's theme:
 gatsby new my-cool-blog https://github.com/tacogator/gatsby-starter-blog-material-clarisse
 ```
