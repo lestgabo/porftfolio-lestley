@@ -5,7 +5,7 @@ module.exports = {
         // Default title of the page
         siteTitleAlt: `Lestley Gabo Portfolio`,
         // Will be used to generate absolute URLs for og:image, sitemap, etc.
-        siteUrl: `http://www.lestley.com/`,
+        siteUrl: `https://www.lestley.com/`,
         // Used for SEO
         siteDescription: `Lestley Gabo Portfolio`,
         // Will be set on the <html /> tag
@@ -77,6 +77,24 @@ module.exports = {
                         src: `/android-chrome-512x512.png`,
                         sizes: `512x512`,
                         type: `image/png`,
+                    },
+                ],
+            },
+        },
+        `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            // It's important to specify the maxWidth (in pixels) of
+                            // the content container as this plugin uses this as the
+                            // base for generating different widths of each image.
+                            maxWidth: 1232,
+                            quality: 90,
+                        },
                     },
                 ],
             },
