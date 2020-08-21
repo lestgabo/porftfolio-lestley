@@ -1,7 +1,6 @@
 import React from 'react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { Box, Typography, Container, useTheme } from '@material-ui/core';
-import Img from 'gatsby-image';
 
 import ItemTags from '@tacogator/gatsby-theme-blog-material-clarisse/src/components/item-tags';
 import SEO from '@tacogator/gatsby-theme-blog-material-clarisse/src/components/seo';
@@ -22,20 +21,9 @@ export default function Post({ data: { post } }) {
                     <Typography variant="h1">{post.title}</Typography>
                     <Box color="text.secondary" fontSize="0.85rem" marginTop={4} marginBottom={4} display="flex" alignItems="center">
                         <time>{post.date}</time>
-                        {post.timeToRead && (
-                            <span>
-                                {` — `}
-                                {post.timeToRead} MIN READ
-                            </span>
-                        )}
-                        {post.tags && (
-                            <React.Fragment>
-                                {` — `} <b>TAGS</b>&nbsp;&nbsp;
-                                <ItemTags size="medium" tags={post.tags} />
-                            </React.Fragment>
-                        )}
+                        &nbsp;&nbsp;
+                        <Box padding={2}>{post.tags && <ItemTags size="medium" tags={post.tags} />}</Box>
                     </Box>
-                    {post.banner && <Img fluid={post.banner.childImageSharp.fluid} alt={post.title} />}
                 </Container>
 
                 <Container
