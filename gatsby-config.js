@@ -25,10 +25,6 @@ module.exports = {
                 slug: `/about`,
             },
             {
-                title: `Papers`,
-                slug: `/papers`,
-            },
-            {
                 title: `Contact`,
                 slug: `/contact`,
             },
