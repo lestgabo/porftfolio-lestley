@@ -36,7 +36,7 @@ module.exports = {
             },
             {
                 name: `github`,
-                url: `https://github.com/tacogator/gatsby-themes`,
+                url: `https://github.com/lestgabo`,
             },
             {
                 name: `twitter`,
