@@ -13,7 +13,7 @@ export default function ({ title, date, timeToRead, excerpt, slug, tags, banner,
             <Box width="100%">
                 {bannerFluid ? (
                     <GatsbyLink to={slug}>
-                        <Img sizes={{ ...bannerFluid, aspectRatio: 3 / 2 }} alt={title} />
+                        <Img fluid={{ ...bannerFluid, aspectRatio: 3 / 2 }} alt={title} />
                     </GatsbyLink>
                 ) : null}
             </Box>
