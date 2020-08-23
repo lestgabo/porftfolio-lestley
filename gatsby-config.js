@@ -5,9 +5,9 @@ module.exports = {
         // Default title of the page
         siteTitleAlt: `Lestley Gabo Portfolio`,
         // Will be used to generate absolute URLs for og:image, sitemap, etc.
-        siteUrl: `https://www.lestley.com/`,
+        siteUrl: `https://lestley.com/`,
         // Used for SEO
-        siteDescription: `Lestley Gabo Portfolio`,
+        siteDescription: `A software developer portfolio.`,
         // Will be set on the <html /> tag
         siteLanguage: `en`,
         // Used for og:image and must be placed inside the `static` folder
