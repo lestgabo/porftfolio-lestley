@@ -12,8 +12,9 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
     },
     homepageImage: {
-        borderRadius: '5px',
+        borderRadius: '2px',
         maxHeight: '600px',
+        maxWidth: '100%',
     },
     noPadding: {
         padding: '0px',
