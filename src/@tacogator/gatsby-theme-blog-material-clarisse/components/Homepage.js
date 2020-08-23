@@ -13,7 +13,7 @@ export default function Homepage({ posts }) {
             <SEO />
             <Container maxWidth="lg" className={useUtilStyles().topSpacer}>
                 <section>
-                    <Hero posts={posts} />
+                    <Hero />
                 </section>
                 <section className={useUtilStyles().topSpacer}>
                     <Box display="flex" justifyContent="space-between" alignItems="center">

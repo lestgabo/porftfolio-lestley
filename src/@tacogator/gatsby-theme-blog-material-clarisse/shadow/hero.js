@@ -1,84 +1,49 @@
 import React from 'react';
-import { Grid, makeStyles, Box } from '@material-ui/core';
+import { Grid, makeStyles, Typography } from '@material-ui/core';
 
 import Tags from '@tacogator/gatsby-theme-blog-material-clarisse/src/components/Tags';
+import TagsQuery from '../components/tags-query';
 
 const useStyles = makeStyles((theme) => ({
     root: {},
     flexCenter: {
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
     },
     homepageImage: {
         borderRadius: '5px',
+        maxHeight: '600px',
+    },
+    noPadding: {
+        padding: '0px',
     },
 }));
 
-export default ({ posts }) => {
+export default () => {
     const classes = useStyles();
-    // const { tags } = posts;
-    // console.log('tags ->', tags);
-    // console.log('posts ->', posts);
-    // console.log('posts ->', posts.allPost);
+    const tags = TagsQuery();
+
     return (
         <>
-            {/* <Grid direction="row" alignContent="center" alignItems="center" justify="center" spacing={0}>
+            <Grid container direction="row" alignContent="center" alignItems="center" justify="space-evenly" spacing={0}>
                 <Grid item lg={6} md={6} sm={6} xs={12} className={classes.flexCenter}>
                     <img src={'../../lestley.jpg'} alt="lestley" className={classes.homepageImage} />
                 </Grid>
                 <Grid item lg={6} md={6} sm={6} xs={12} className={classes.flexCenter}>
-                    Tags
-                    <Box paddingTop={2}><Tags list={posts.group} /></Box>
+                    <Grid container direction="column" alignContent="center" alignItems="center" justify="space-evenly" spacing={0}>
+                        <Grid item>
+                            <Typography variant="h3">Software Developer</Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography variant="h6">(Looking For Work)</Typography>
+                        </Grid>
+                        <Grid item>
+                            <Tags list={tags} hero={true} className={classes.noPadding} />
+                        </Grid>
+                    </Grid>
                 </Grid>
-            </Grid> */}
+            </Grid>
         </>
     );
 };
-
-// export default ({ posts }) => {
-//     if (!(Array.isArray(posts) && posts.length > 0)) {
-//         return null;
-//     }
-//     const firstPost = posts[0];
-//     const { title, banner, slug } = firstPost;
-//     const theme = useTheme();
-//     const bannerFluid = banner ? banner.childImageSharp.fluid : null;
-
-//     return (
-//         <div
-//             style={{
-//                 height: '600px',
-//                 background: banner ? `url(${banner.childImageSharp.fluid.src})` : 'none',
-//                 backgroundSize: 'cover',
-//                 borderRadius: '10px',
-//                 display: 'flex',
-//                 flexDirection: 'column',
-//                 flexWrap: 'wrap',
-//                 justifyContent: 'flex-end',
-//                 cursor: 'pointer',
-//             }}
-//             onClick={() => {
-//                 navigate(slug);
-//             }}
-//         >
-//             <div
-//                 style={{
-//                     width: '100%',
-//                     backgroundColor: 'rgba(250, 250, 250, 0.90)',
-//                     borderRadius: '0 0 10px 10px',
-//                     padding: theme.spacing(1, 2),
-//                     display: 'flex',
-//                     alignItems: 'center',
-//                 }}
-//             >
-//                 <Typography variant="h6" component="h3" color="textSecondary" display="inline">
-//                     <Link to={slug}>{title}</Link>
-//                 </Typography>
-
-//                 <IconButton color="secondary" component={Link} to={slug}>
-//                     <ArrowRightAlt />
-//                 </IconButton>
-//             </div>
-//         </div>
-//     );
-// };
