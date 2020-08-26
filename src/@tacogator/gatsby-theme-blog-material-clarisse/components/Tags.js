@@ -3,7 +3,6 @@ import kebabCase from 'lodash.kebabcase';
 import { Box, Container } from '@material-ui/core';
 import { Link as GatsbyLink } from 'gatsby';
 
-import Link from '@tacogator/gatsby-theme-blog-material-clarisse/src/components/Link';
 import useMinimalBlogConfig from '@tacogator/gatsby-theme-blog-material-clarisse/src/components/use-minimal-blog-config';
 import SEO from '@tacogator/gatsby-theme-blog-material-clarisse/src/components/seo';
 import MinimalChip from '@tacogator/gatsby-theme-blog-material-clarisse/src/components/minimal-chip';
@@ -15,7 +14,7 @@ const Tags = ({ list, hero }) => {
 
     return (
         <>
-            <SEO title="Tags" />
+            <SEO title="Projects" />
             <Container maxWidth="md" className={useUtilStyles().topSpacer}>
                 {hero ? null : <h2>Tags</h2>}
                 <section>

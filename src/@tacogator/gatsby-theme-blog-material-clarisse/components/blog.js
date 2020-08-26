@@ -8,7 +8,7 @@ import { SectionDivider, useUtilStyles } from '@tacogator/gatsby-theme-blog-mate
 export default function ({ posts }) {
     return (
         <>
-            <SEO title="Blog" />
+            <SEO title="Projects" />
             <section>
                 <Container maxWidth="md" className={useUtilStyles().topSpacer}>
                     <Typography variant="h3" component="h2" gutterBottom>
